@@ -18,6 +18,8 @@ services:
       - postgres
     networks:
       - my_network
+    ports:
+      - "4200:4200"  # Prefect UI
 
 networks:
   my_network:

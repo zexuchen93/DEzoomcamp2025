@@ -53,12 +53,12 @@ def ingest_data(user, password, host, port, db, table_name, url):
             break
 
 if __name__ == '__main__':
-    user = "postgres"
-    password = "admin"
-    host = "localhost"
-    port = "5433"
+    user = "root"
+    password = "root"
+    host = "172.18.0.2"
+    port = "5432"
     db = "ny_taxi"
-    table_name = "yellow_taxi_trips"
+    table_name = "yellow_taxi_trips_20250206"
     csv_url = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
 
     ingest_data(user, password, host, port, db, table_name, csv_url)
